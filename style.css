@@ -24,7 +24,7 @@
 
 	.Nav{
 		text-align : left;
-		color: #F8EFBA;
+		color: #d2dae2;
 		font-weight: bold;
 		font-family: Bebas Neue;
 		font-size: 1.8rem;	
@@ -33,7 +33,7 @@
 	a:hover {
 		display: inline-block;
 		text-decoration-skip-ink: auto;
-		color: #F8EFBA;
+		color: #d2dae2;
 		position: relative;
 		cursor: pointer;
 		text-decoration: none;
@@ -153,19 +153,19 @@ font-family:Montserrat;
 #CSI {
 	color:#dfe6e9;
 	padding-left: 7rem;
+	text-align: center;
 
 }
 #ADI{
 	color:#dfe6e9;
 	padding-left: 7rem;
+	text-align: center;
 
 }
-
 
 	nav{
 		display: flex;
 		justify-content: space-around;
-		
 	}
 
 	.addMargLeft{
@@ -173,9 +173,7 @@ font-family:Montserrat;
 	}	
 
 	.rotated{
-		transform: rotate(90deg);
-/* 		height: 250px; */
-		
+		transform: rotate(90deg);		
 	}
 
 .circular--portrait {
@@ -190,11 +188,3 @@ font-family:Montserrat;
   width: 100%;
   height: auto;
 }
-
-
-
-
-
-
-
-
