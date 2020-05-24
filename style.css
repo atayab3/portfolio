@@ -131,8 +131,7 @@ body{
 }
 
 #imagerhyz{
-		background-image:url("./russ.PNG");
-	background-size: cover;
+    background-size: cover;
     background-position: 50% 50%;
 	
 }
