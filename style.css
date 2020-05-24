@@ -131,7 +131,8 @@ body{
 }
 
 #imagerhyz{
-    background-size: cover;
+		background-image:url("./russ.PNG");
+	background-size: cover;
     background-position: 50% 50%;
 	
 }
@@ -239,14 +240,22 @@ margin-left: -105px;
 
   .aboutBox{
     grid-area: aboutBox;
-	
+	  margin-top: -50px;
    }
+.projBox{
+	  margin-top: -50px;
+}
   .boxes{
     display: grid; 
     grid-gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	    margin-top: -40px;
+/* 	  	justify-content: space-evenly;  */
+
   }
   .big-box {
+/* 	  	justify-content: space-evenly;  */
+
     background-color: white;
 	color: #b33939; 
     text-align: center;
