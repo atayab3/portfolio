@@ -5,13 +5,266 @@ html{
 
 body{
 	height:100%;
-    overflow-x:hidden;
-    margin: 30px 50px;
-    font-family:'Roboto Slab';
+	overflow-x:hidden;
+        margin: 30px 50px;
+        font-family:'Roboto Slab';
 	align-items: center;
-  }
+}
 
- .page2{
+p{
+   line-height:1.75;
+}
+
+a{
+   color: black;
+}
+  
+.text-primary{
+	color:black   !important
+}
+
+h2, h3, h5, h6{
+	font-weight:700;
+	font-family:Montserrat;
+	color: white; 
+}
+
+
+/* NAV stuff below*/
+#mainNav{/* When just menu pops up	 */
+	background-color: transparent;
+}
+
+#mainNav .navbar-toggler{/*  For menu that comes up when screen is smaller  not too important */
+	font-size: 24px;
+	text-transform: uppercase;
+	color:   black;
+	border: 0;
+	font-family: Montserrat;
+} 
+  
+#mainNav .navbar-brand{ /* 	 For name in top left the one that i dont use */
+	color: black;	
+	font-family:'Kaushan Script';
+}  
+
+#mainNav .navbar-nav .nav-item .nav-link{/* 	 For About-Projects-Resume navigation at the top right */
+	font-size: 90%;
+	font-weight: 400;
+	padding: .75em 0;
+	letter-spacing: 1px;
+	color: white;
+	font-family: "DM Mono";
+}
+
+#mainNav .navbar-nav .nav-item .nav-link{
+	padding:1.1em 1em!important
+}
+
+#mainNav.navbar-shrink{
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: #212529;
+}
+  
+#mainNav.navbar-shrink .navbar-brand{
+	font-size:1.25em;
+	padding:12px 0;
+}
+/* NAV stuff below*/
+
+.imageHold{
+	background-image:url("./architecture-benches-buildings-business-876218.jpg");
+	background-repeat:no-repeat;
+/* 	background-attachment: fixed; */
+    /* Add the blur effect */
+    filter: blur(8px);
+	-webkit-filter: blur(8px);     
+	height: 100%; 
+	background-position: 50% 50%; 
+	background-size:cover;
+}
+  
+header.masthead{/*  The name and stuff,*/
+   text-align: center;
+   color: white;
+}
+
+header.masthead .intro-text{
+	padding-top: 100px;
+	padding-bottom: 75px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+}
+  
+header.masthead .intro-text .intro-lead-in h1{ /* 	 ADAM TAYABALI */
+	font-size: 65px;
+	line-height: 70px;
+	margin-top: -35px;
+	margin-bottom: 5px;
+	margin-left: -25px;
+	text-align: left;
+	word-spacing: 10px;
+    letter-spacing: 3px; 
+	font-family:"Jost";
+	color: red;
+	font-weight: bold;
+}
+  
+header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
+	margin-left: -105px;
+	font-size: 30px;
+	line-height:50px;
+	margin-bottom: 15px;
+	font-family: "Inconsolata";
+	word-spacing: 10px;
+	margin-top: 15px;
+	color: red;
+}
+  
+@media (min-width:600px){ /* laptop view	 600 px or bigger */
+	.imageHold{
+		background-image:url("./architecture-benches-buildings-business-876218.jpg");
+		background-repeat:no-repeat;
+		background-attachment: fixed;
+		/* Add the blur effect */
+		filter: blur(8px);
+		-webkit-filter: blur(8px);     
+		height: 100%; 
+		background-position: 50% 50%; 
+		background-size:cover;
+	}
+	
+	header.masthead .intro-text{
+		padding-top:300px;
+		padding-bottom:200px;
+	}
+	
+	header.masthead .intro-text .intro-lead-in h1{/* 	 ADAM TAYABALI */
+		margin-top: -285px;
+		text-align: left;
+        font-size: 105px;
+        line-height: 115px;
+	    word-spacing: 22px;
+	    letter-spacing: 6px; 
+        margin-bottom:25px;
+        font-family:"Jost";
+	    color: white;
+        font-weight: bold;
+	}
+	header.masthead .intro-text .intro-heading{ /*Freelance, Web Dev*/
+		font-size: 35px;
+        line-height:40px;
+		margin-bottom: 0px;
+	    margin-left: -9px;
+	    text-align: left;
+	    color: white;
+        font-family: "Inconsolata";
+	}  
+} /* end of media query */
+
+
+/* Page stuff below */
+.page-section{
+	padding: 100px 0; 
+}
+
+.page-section h2.section-heading{/* Title for each section - About, Projects*/
+	font-size: 60px;
+	margin-bottom:15px;  
+	text-align: left;
+	margin-left: 40px; 
+	font-family: Fjalla One; 
+
+}
+  
+.page-section h3.section-subheading{/* Description after the Titles for each section*/
+	font-size: 20px;
+	text-align: left;
+	margin-left: 55px;
+	margin-right: 55px;
+	margin-top: 25px; 
+    margin-bottom:75px;
+	color: white; 
+	word-spacing: 2px;
+    text-transform:none;
+    font-family:'Acme';
+}
+
+  
+.wrapper{
+   display: grid;
+   grid-gap: 0px; 
+}
+
+.page1{/* section#about.page-section  */
+	background-color: #b33939;
+	color: white; 
+}
+
+.aboutBox{
+	grid-area: aboutBox;
+	margin-top: -50px;
+}
+
+/*  Use of CSS GRID for page 1/About section*/
+.boxes{
+    display: grid; 
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	margin-top: -40px;
+}
+
+.big-box {
+    background-color: white;
+	color: #b33939; 
+    text-align: left;
+    padding: 1.5rem 2rem;   
+    box-shadow: var(--shadow);
+    margin: 35px 35px;
+}
+
+.big-box p{
+	 font-family: "Inconsolata";
+	font-weight: bold;
+	font-size: 14px;
+}
+.big-box h4{
+	font-family:"Jost";
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 24px;
+}
+.big-box-1{
+	margin-left: 50px;
+}
+  
+.big-box-2{
+	margin-right: 25px;
+	margin-left: 25px;
+} 
+
+.big-box-3{
+	margin-right: 50px;
+} 
+
+
+
+
+/*  Use of CSS GRID for page 1/About section*/
+
+
+
+
+
+.page2{/* section#projects.page-section  */
 	 padding: 0;
 	 background: #333;
 	 justify-content: center;
@@ -19,6 +272,10 @@ body{
 	 font-family: "consolas";
 	 color: white;
 }
+.projBox{
+	margin-top: 50px;
+}
+
 .container2{
 	color: white;
 	width: 100%; 
@@ -27,6 +284,7 @@ body{
 	justify-content: space-evenly; 
 
 }
+
 .container2 .card{
 	background: #333;
 	position: relative;
@@ -40,13 +298,11 @@ body{
 }
 
 .container2 .card .card-img-top {
-/*     transform: translateY(0px); */
     height: 250px;
 	z-index: 3;
 }
 
 .container2 .card .card-img-top:hover{
-/*     transform: translateY(200px); */
 	transition: 0.5s;
 }
 
@@ -60,319 +316,19 @@ body{
 	transform: translateY(0px);
 }
 
- 
 .container2 .card .btn{
 	color: black;
 	background-color: white;
 }
 
-  #mainNav{
-   background-color: white;
-  }
 
-   #mainNav .navbar-toggler{
-/*      For menu that comes up when screen is smaller  not too important */
-   font-size:12px;
-   text-transform:uppercase;
-   color: black;
-   border:0;
-   font-family:Montserrat;
-  } 
-  
-  #mainNav .navbar-brand{ 
-  /* 	 For name in top right*/
-   color: black;	
-   font-family:'Kaushan Script';
-  }
-  
-
-  #mainNav .navbar-nav .nav-item .nav-link{
-  /* 	 For About-Projects-Experience navigation at the top right */
-   font-size:90%;
-   font-weight:400;
-   padding: .75em 0;
-   letter-spacing:1px;
-   color: white;
-   font-family: "DM Mono";
-  }
-.page2 #mainNav .navbar-nav .nav-item .nav-link{
-	color: green;
-}
-  /* div.collapse{	 Area between names and sections} */
-  
-  /*  Responsive stuff for the navigation*/
-  @media (min-width:992px){
-   #mainNav{padding-top:25px;
-     padding-bottom:25px;
-     transition:padding-top .3s,
-     padding-bottom .3s;
-	   border:none;
-	   background-color:transparent; }
-   
-   #mainNav .navbar-brand{
-     font-size:1.75em;
-     transition:all .3s
-   }
-   #mainNav .navbar-nav .nav-item .nav-link{padding:1.1em 1em!important}
-   #mainNav.navbar-shrink{padding-top:0;padding-bottom:0;background-color:#212529}
-   #mainNav.navbar-shrink .navbar-brand{font-size:1.25em;padding:12px 0}
-  }
-#imagerob{
-	background-image:url("./balc1.PNG");
-	background-size: 151%;
-    background-position: 54% 50%;
-	
-}
-
-#imagerhyz{
-		background-image:url("./russ.PNG");
-	background-size: cover;
-    background-position: 50% 50%;
-	
-}
-
-.imageHold{
-	background-image:url("./architecture-benches-buildings-business-876218.jpg");
-	
-   background-repeat:no-repeat;
-   background-attachment: fixed;
-    /* Add the blur effect */
-       filter: blur(8px);
-   -webkit-filter: blur(8px);     
-   height: 100%; 
-   background-position: 50% 50%; 
-   background-size:cover;
-}
-  
-
-
-  /*  The name and stuff,*/
-  header.masthead{
-   text-align: center;
-   color: white;
-  }
-  header.masthead .intro-text{
-
-   padding-top: 100px;
-   padding-bottom: 75px;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-  }
-  
-  header.masthead .intro-text .intro-lead-in h1{
-	  font-size: 65px;
-	  line-height: 70px;
-	  margin-top: -35px;
-	  margin-bottom: 5px;
-	  margin-left: -25px;
-	  text-align: left;
-	  word-spacing: 10px;
-      letter-spacing: 3px; 
-	  font-family:"Jost";
-	  color: black;
-	  font-weight: bold;
-  }
-  
-  header.masthead .intro-text .intro-heading{
-margin-left: -105px;
-   font-size: 30px;
-  /* 	font-weight:100; */
-   line-height:50px;
-   margin-bottom: 15px;
-   font-family: "Inconsolata";
-   word-spacing: 10px;
-   margin-top: 15px;
-	color: white;
-  /* 	color: ; */
-  }
-  
-  @media (min-width:768px){header.masthead .intro-text{padding-top:300px;padding-bottom:200px}
-   
-  header.masthead .intro-text .intro-lead-in h1{
-
-  margin-top: -285px;
- text-align: left;
-   font-size: 105px;
-   line-height: 115px;
-	  word-spacing: 22px;
-	  letter-spacing: 6px; 
-   margin-bottom:25px;
-   font-family:"Jost";
-	color: white;
-   font-weight: bold;
-  }
-  
-  header.masthead .intro-text .intro-heading{
-/* 	  background-color: white; */
-     font-size: 35px;
-     line-height:40px;
-     margin-bottom: 0px;
-	 margin-left: -9px;
-	  text-align: left;
-	  color: white;
-     font-family: "Inconsolata";
-   }
-  
-  }
-  
-  
-  
-
-  
-  .wrapper{
-   display: grid;
-   grid-gap: 0px; 
-  }
-  
-
-  .aboutBox{
-    grid-area: aboutBox;
-	  margin-top: -50px;
-   }
-.projBox{
-	  margin-top: -50px;
-}
-  .boxes{
-    display: grid; 
-    grid-gap: 0px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	margin-top: -40px;
-
-  }
-  .big-box {
-    background-color: white;
-	color: #b33939; 
-    text-align: left;
-    padding: 1.5rem 2rem;   
-    box-shadow: var(--shadow);
-    margin: 35px 35px;
-  }
-
-.big-box p{
-	 font-family: "Inconsolata";
-	font-weight: bold;
-	font-size: 14px;
-}
-.big-box h4{
-   font-family:"Jost";
-	text-decoration: underline;
-	font-weight: bold;
-	font-size: 24px;
-}
-.big-box a{
-	   font-family:"Jost";
-	align-content: center;
-
-	text-align: center;
-}
-   .big-box-1{
-      margin-left: 50px;
-  }
-  
-  .big-box-2{
-      margin-right: 25px;
-	  margin-left: 25px;
-  } 
- .big-box-3{
-      margin-right: 50px;
-  } 
-
-/* section#about.page-section  */
-.page1{
-	background-color: #b33939;
-	color: white; 
-}
-
-  p{
-   line-height:1.75;
-  }
-  a{
-   color: black;
-  }
-  a:hover{
-   color:black;
-  }
-  
-  .text-primary{color:black   !important}
-
-  
-  h2,h3,h5,h6{
-   font-weight:700;
-   font-family:Montserrat;
-	color: white; 
-  }
-/* h4{
-	color: #b33939;
-} */
-  
-  .page-section{
-   padding:100px 0; 
-  }
-
-  .page-section h2.section-heading{
-   font-size: 60px;
-/*    margin-top: 20px; */
-   margin-bottom:15px;
-	  
-	text-align: left;
-	margin-left: 40px; 
-	font-family: Fjalla One; 
-  }
-  
-  .page-section h3.section-subheading{
-   font-size: 20px;
-	text-align: left;
-	margin-left: 55px;
-	margin-right: 55px;
-	  margin-top: 25px; 
-   margin-bottom:75px;
-	color: white; 
-	  word-spacing: 2px;
-   text-transform:none;
-   font-family:'Acme';
-  }
-a.btn{
-/* 	text-align: center;  */
-}
-
-
-
-.deepshadow {
-/*      color: #e0dfdc;
-    letter-spacing: .1em;
-    text-shadow: 
-      0 -1px 0 #fff, 
-      0 1px 0 #2e2e2e, 
-      0 2px 0 #2c2c2c, 
-      0 3px 0 #2a2a2a, 
-      0 4px 0 #282828, 
-      0 5px 0 #262626, 
-      0 6px 0 #242424, 
-      0 7px 0 #222, 
-      0 8px 0 #202020, 
-      0 9px 0 #1e1e1e, 
-      0 10px 0 #1c1c1c, 
-      0 11px 0 #1a1a1a, 
-      0 12px 0 #181818, 
-      0 13px 0 #161616, 
-      0 14px 0 #141414, 
-      0 15px 0 #121212, 
-      0 22px 30px rgba(0, 0, 0, 0.9); 
- */
+.deepshadow {/* Effect on FreeLance Web Development Text*/
 	color: #2c2c2c;
-/*     background-color: #d5d5d5; */
     letter-spacing: .1em;
     text-shadow: 
       4px 4px 0px #2c2c2c, 
       7px 7px 0px rgba(0, 0, 0, 0.2);
-  }
+}
 
 
 
