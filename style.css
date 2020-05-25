@@ -40,33 +40,27 @@ body{
 }
 
 .container2 .card .card-img-top {
-    transform: translateY(60px);
+/*     transform: translateY(0px); */
     height: 250px;
 	z-index: 3;
 }
 
-.container2 .card:hover .card-img-top{
-	transform: translateY(0px);
+.container2 .card .card-img-top:hover{
+/*     transform: translateY(200px); */
 	transition: 0.5s;
 }
 
 .container2 .card .card-body{
 	z-index: 1;
 	color: white;
-	transform: translateY(-140px);
+	transform: translateY(-200px);
 }
 
-.container2 .card:hover .card-body{
+.container2 .card .card-body:hover{
 	transform: translateY(0px);
 }
 
-.container2 .card .face .face1 .content h3{
-	margin: 10px 0 0;
-	padding: 0;
-	color: #fff;
-	text-align:  center;
-	font-size: 1.5em;
-}
+ 
 .container2 .card .btn{
 	color: black;
 	background-color: white;
