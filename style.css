@@ -90,9 +90,6 @@ h2, h3, h5, h6{
 
 
   
-
-
-}
 header.masthead{/*  The name and stuff,*/
    text-align: center;
    color: white;
@@ -138,7 +135,7 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 	color: white;
 }
   
-@media (min-width: 720px){ /* laptop view	 600 px or bigger */
+@media (min-width: 770px){ /* laptop view	 600 px or bigger */
 	.imageHold{
 		background-image:url("./architecture-benches-buildings-business-876218.jpg");
 		background-repeat:no-repeat;
@@ -223,12 +220,7 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 }
 
 /*  Use of CSS GRID for page 1/About section*/
-.boxes{
-    display: grid; 
-    grid-gap: 0px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	margin-top: -40px;
-}
+
 
 .big-box {
     background-color: white;
@@ -251,7 +243,7 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 	font-size: 24px;
 }
 
-@media (min-width: 451px){ /* laptop view	 600 px or bigger */
+@media (min-width: 771px){ /* laptop view	 600 px or bigger */
 .big-box-1{
 	margin-left: 50px;
 }
@@ -264,8 +256,35 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 .big-box-3{
 	margin-right: 50px;
 } 
+.boxes{
+    display: grid; 
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	margin-top: -40px;
 }
+}
+@media (max-width: 770px){ /* laptop view	 600 px or bigger */
+.big-box-1{
+	margin-right: 25px;
+	margin-left: 25px;
+}
+  
+.big-box-2{
+	margin-right: 25px;
+	margin-left: 25px;
+} 
 
+.big-box-3{
+	margin-right: 25px;
+	margin-left: 25px;
+} 
+.boxes{
+/*     display: grid;  */
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	margin-top: -40px;
+}
+}
 
 
 
@@ -369,6 +388,3 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
       4px 4px 0px #2c2c2c, 
       7px 7px 0px rgba(0, 0, 0, 0.2);
 }
-
-
-
