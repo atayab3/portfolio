@@ -397,6 +397,7 @@ justify-content: space-around;
 	z-index: 1;
 	color: white;
 	transform: translateY(-200px);
+	padding: 1.45rem;
 }
 
 .container2 .card .card-body:hover{
