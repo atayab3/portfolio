@@ -157,16 +157,27 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 	}
 	
 	header.masthead .intro-text .intro-lead-in h1{/* 	 ADAM TAYABALI */
-		margin-top:  -285px;
-		text-align:  left;
+		text-align:  center;
         font-size:   105px;
         line-height: 115px;
 	    word-spacing: 22px;
 	    letter-spacing: 6px; 
-        margin-bottom: 25px;
         font-family:"Jost";
 	    color: white;
         font-weight: bold;
+		animation-name: drop;
+		animation-duration: 1s;
+	}
+	header.masthead .intro-text .intro-lead-in h1:hover{/* 	 ADAM TAYABALI */
+		transform: scale(1.2);
+	}
+	@keyframes drop {
+		0%{
+			margin-bottom: 1000px;
+		}
+		100%{
+			margin-bottom: 50px;
+		}
 	}
 	header.masthead .intro-text .intro-heading{ /*Freelance, Web Dev*/
 		display: block;
@@ -249,26 +260,7 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 }
 
 @media (min-width: 1001px){ /* laptop view	 600 px or bigger */
-.big-box-1{
-	margin-left: 50px;
-}
-  
-.big-box-2{
-	margin-right: 25px;
-	margin-left: 25px;
-/* 	    text-align: center; */
 
-} 
-
-.big-box-3{
-	margin-right: 50px;
-} 
-.boxes{
-    display: grid; 
-    grid-gap: 0px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	margin-top: -40px;
-}
 }
 @media (max-width: 1000px){ /* smaller */
 	.page-section h3.section-subheading{/* Description after the Titles for each section*/
@@ -277,35 +269,18 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 	margin-left: 25px;
 	margin-right: 25px;
 	margin-top: 25px; 
-    margin-bottom:75px;
+    margin-bottom: 40px;
 	color: white; 
 	word-spacing: 2px;
     text-transform:none;
     font-family:'Acme';
 }
-.big-box-1{
-	margin-right: auto;
-	margin-left: auto;
 
-}
-  
-.big-box-2{
-/* 	text-align: center; */
-
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 75px;
-
-} 
-
-.big-box-3{
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 75px;
-
-} 
 .boxes{
 /*     display: grid;  */
+	display: grid; 
+	grid-gap: 0px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	margin-top: -40px;
@@ -334,86 +309,3 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 	margin-top: 50px;
 }
 
-
- @media (min-width: 1001px){
-	.container2{
-	color: white;
-	width: 100%; 
-	position: relative; 
-	display: flex; 
-justify-content: space-around;		
-	
-}
-	 .container2 .card{
-	background: #333;
-	position: relative;
-	color: white;
-	width: 20rem;
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-top: -60px;
-	margin-bottom: 5px;
-	border-style: none;	
-		display: flex;
-}
-	 
-}
-@media (max-width: 1000px){
-	.container2{
-	color: white;
-	width: 100%; 
-	position: relative; 
-    justify-content: center;
-    flex-direction: row;
-/* 	justify-content: space-evenly; */
-}
-	
-	.container2 .card{
-	justify-content: center;		
-	background: #333;
-	position: relative;
-	color: white;
-	width: 20rem;
-	margin-left: auto;
-    margin-right: auto;
-	margin-bottom: 15px;
-	border-style: none;	
-	display: flex;
-}
-	
-} 
-
-
-.container2 .card .card-img-top {
-    height: 250px;
-	z-index: 3;
-}
-
-.container2 .card .card-img-top:hover{
-	transition: 0.5s;
-}
-
-.container2 .card .card-body{
-	z-index: 1;
-	color: white;
-	transform: translateY(-200px);
-	padding: 1.45rem;
-}
-
-.container2 .card .card-body:hover{
-	transform: translateY(0px);
-}
-
-.container2 .card .btn{
-	color: black;
-	background-color: white;
-}
-
-
-.deepshadow {/* Effect on FreeLance Web Development Text*/
-	color: #2c2c2c;
-    letter-spacing: .1em;
-    text-shadow: 
-      4px 4px 0px #2c2c2c, 
-      7px 7px 0px rgba(0, 0, 0, 0.2);
-}
