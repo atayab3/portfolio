@@ -37,11 +37,6 @@ h2, h3, h5, h6{
 
 #mainNav .navbar-toggler{/*  For menu that comes up when screen is smaller  not too important */
 	display: none ;
-/* 	font-size: 24px;
-	text-transform: uppercase;
-	color:   black;
-	border: 0;
-	font-family: Montserrat; */
 } 
   
 #mainNav .navbar-brand{ /* 	 For name in top left the one that i dont use */
@@ -222,7 +217,7 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 }
 
 .page1{/* section#about.page-section  */
-	background-color: #b33939;
+	background: #333;
 	color: white; 
 }
 
@@ -231,12 +226,9 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 	margin-top: -50px;
 }
 
-/*  Use of CSS GRID for page 1/About section*/
-
-
 .big-box {
     background-color: white;
-	color: #b33939; 
+	color: #333; 
     text-align: left;
     padding: 1.5rem 2rem;   
     box-shadow: var(--shadow);
@@ -264,16 +256,7 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 		
 	}
 
-
-
-
-/*  Use of CSS GRID for page 1/About section*/
-
-
-
-
-
-.page2{/* section#projects.page-section  */
+.page2{
 	 padding: 0;
 	 background: #333;
 	 justify-content: center;
@@ -281,8 +264,5 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 	 font-family: "consolas";
 	 color: white;
 	
-}
-.projBox{
-	margin-top: 50px;
 }
 
