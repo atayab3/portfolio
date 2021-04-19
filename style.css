@@ -85,20 +85,12 @@ header.masthead{/*  The name and stuff,*/
 }
 
 
-
-.imageHold{
-	background-image:url("./architecture-benches-buildings-business-876218.jpg");
-	background-repeat:no-repeat;
-/* 	background-attachment: fixed; */
-    /* Add the blur effect */
-    filter: blur(8px);
-	-webkit-filter: blur(8px);     
-	height: 100%; 
-	padding: 335px 0 335px 0; 
-/* 	width: 100%; */
-	background-position: 50% 50%; 
-/* 	background-size:cover; */
+#homePage{
+	background-size: cover;
+	width: 100%;
+	filter: blur(8px);
 }
+
 header.masthead .intro-text{
 	padding-top: 75px;
 	padding-bottom: 75px;
@@ -167,16 +159,19 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
         font-weight: bold;
 		animation-name: drop;
 		animation-duration: 1s;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000;
 	}
 	header.masthead .intro-text .intro-lead-in h1:hover{/* 	 ADAM TAYABALI */
 		transform: scale(1.2);
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 4px 4px 0 #000;
+		
 	}
 	@keyframes drop {
 		0%{
 			margin-bottom: 1000px;
 		}
 		100%{
-			margin-bottom: 50px;
+			margin-bottom: 55px;
 		}
 	}
 	header.masthead .intro-text .intro-heading{ /*Freelance, Web Dev*/
@@ -212,11 +207,12 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 	margin-left: 55px;
 	margin-right: 55px;
 	margin-top: 25px; 
-    margin-bottom:75px;
+   
 	color: white; 
 	word-spacing: 2px;
     text-transform:none;
     font-family:'Acme';
+	text-align: justify;
 }
 
   
@@ -244,14 +240,16 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
     text-align: left;
     padding: 1.5rem 2rem;   
     box-shadow: var(--shadow);
-    margin: 35px 35px;
+    margin: 35px 35px ;
+	width: 33%;
 }
 
-.big-box p{
+.big-box p, li{
 	 font-family: "Inconsolata";
 	font-weight: bold;
 	font-size: 14px;
 }
+
 .big-box h4{
 	font-family:"Jost";
 	text-decoration: underline;
@@ -259,33 +257,12 @@ header.masthead .intro-text .intro-heading{/* Freelance, Web Dev*/
 	font-size: 24px;
 }
 
-@media (min-width: 1001px){ /* laptop view	 600 px or bigger */
-
-}
-@media (max-width: 1000px){ /* smaller */
-	.page-section h3.section-subheading{/* Description after the Titles for each section*/
-	font-size: 20px;
-	text-align: left;
-	margin-left: 25px;
-	margin-right: 25px;
-	margin-top: 25px; 
-    margin-bottom: 40px;
-	color: white; 
-	word-spacing: 2px;
-    text-transform:none;
-    font-family:'Acme';
-}
-
 .boxes{
-/*     display: grid;  */
-	display: grid; 
-	grid-gap: 0px;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 0px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	margin-top: -40px;
-}
-}
+		display: flex; 
+		flex-direction: row;
+		justify-content: flex-end;
+		
+	}
 
 
 
