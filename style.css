@@ -4,6 +4,81 @@ html, body{
 	height:100%;
 	overflow-x:hidden;
 }
+/* LAPTOP */
+@media only screen and (min-width: 845px) {
+	.boxes{
+		display: flex; 
+		flex-direction: row;
+	}
+	.box-courses {
+		background-color: #E0FBFC;
+		color: #253237;
+		padding: 1.5rem 2rem;   
+		margin: 35px 35px ;
+		width: 30%;
+	}
+	div.photoRow{
+		display: flex; 
+		flex-direction: row;
+	}
+	div.locationsRow{
+		display: flex; 
+		flex-direction: row;
+	}
+	img.travel{
+		border-radius: 20px;
+		margin: auto;
+		margin-bottom: 15px;
+		width: 25%;
+		height: auto;
+		object-fit: cover;
+	}
+	.page-section h3.section-subheading{/* Description after the Titles for each section*/
+		font-size: 20px;
+		margin-left: 35px;
+		font-family:'Acme';
+		text-align: left;
+	}
+}
+/* PHONE */
+@media only screen and (max-width: 845px) {
+	.boxes{
+		display: flex; 
+		flex-direction: column;
+		text-align: center;
+	}
+	.box-courses {
+		background-color: #E0FBFC;
+		color: #253237;
+		padding: 1.5rem 2rem;   
+		margin-left: 35px;
+		margin-right: 35px;
+		margin-bottom: 15px;
+	}
+	div.photoRow{
+		display: flex; 
+		flex-direction: column;
+	}
+	div.locationsRow{
+		display: flex; 
+		flex-direction: column;
+	}
+	img.travel{
+		border-radius: 20px;
+		margin: auto;
+		margin-bottom: 15px;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+	.page-section h3.section-subheading{/* Description after the Titles for each section*/
+		font-size: 25px;
+		margin-bottom: 35px;
+		font-family:'Acme';
+		text-align: left;
+	}
+} 
+
 
 	/* 	 ADAM TAYABALI 
 		text-align:  center;
@@ -45,29 +120,15 @@ html, body{
 	text-align: center;
 }
   
-.page-section h3.section-subheading{/* Description after the Titles for each section*/
-	font-size: 20px;
-	margin-left: 35px;
-	font-family:'Acme';
-	text-align: left;
-}
-.boxes{
-	display: flex; 
-	flex-direction: row;
-}
 
-.box-courses {
-    background-color: #E0FBFC;
-	color: #253237;
-    padding: 1.5rem 2rem;   
-    margin: 35px 35px ;
-	width: 33%;
-}
+
+
 
 .box-courses p, li{
 	font-family: "Inconsolata";
 	font-size: 14px;
 	font-weight: bold;
+	text-align: start;
 }
 
 .box-courses h4{
@@ -106,15 +167,7 @@ div.big-box a{
 	font-weight: bold;
 	font-size: 14px;
 }
-	
-img.travel{
-	border-radius: 20px;
-	margin: auto;
-	margin-bottom: 15px;
-	width: 25%;
-  	height: auto;
-	object-fit: cover;
-}
+
 p.location{
 	margin: auto;
 }
