@@ -22,6 +22,8 @@
   <section class="page-section page1" id="about">
 		  <div class="row aboutBox">
         <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase ">This site is currently under construction</h2>
+
           <h2 class="section-heading text-uppercase ">About</h2>
           <h3 class="section-subheading">Hi, I'm Adam. 
             I am a junior studying Computer Science at the University of Illinois at Chicago. 
@@ -104,12 +106,89 @@
 			<div class="col-lg-12 text-center">
 			  <h2 class="section-heading text-uppercase">Work Experience</h2>
 			  <h3 class="section-subheading">Here are some roles I've had the pleasure of working in.</h3>
+        <br>
+        <div class="process-wrapper">
+          <div id="progress-bar-container">
+            <ul>
+              <li class="step step01 active"><div class="step-inner">Research Assistant</div></li>
+              <li class="step step02"><div class="step-inner">Computer Specialist I</div></li>
+              <li class="step step03"><div class="step-inner">Teaching Assistant</div></li>
+              <li class="step step04"><div class="step-inner">Front End Co Op</div></li>
+            </ul>
+            
+            <div id="line">
+              <div id="line-progress"></div>
+            </div>
+          </div>
+          
+          <div id="progress-content-section">
+            <div class="section-content discovery active">
+              <h2>Research Assistant</h2>
+              <p>Debugged errors and tested the functionality of the Monitoring Your Air Intake Risk (MY-AIR) application, which detects if the user is stationery, walking, running etc.
+                <br>Collaborated with team members to incorporate the Google Maps API to determine user’s location
+                </p>
+            </div>
+            
+            <div class="section-content strategy">
+              <h2>Computer Specialist I</h2>
+              <p>Responsible for providing hardware, software, and network support to students and faculty
+                <br> Assisted with the deployment of Windows 10 and English learning software onto 100+ computers 
+                </p>
+            </div>
+            
+            <div class="section-content creative">
+              <h2>Undergraduate Teaching Assistant </h2>
+              <p>•	Program Design I (Media), helping students learn Python syntax and procedural programming through drawing and animation, image manipulation, and data processing</p>
+            </div>
+            
+            <div class="section-content production">
+              <h2>Front End Engineering Co Op</h2>
+              <p>Translated UI wireframes and resolved bugs using Android Studio and Kotlin
+                <br>Created analytics events to provide business insights for user interactions with the subscription process of garage door and individual cameras 
+                <br>Developed the PREVIEW feature that reminds users of expired cameras and provides another way to subscribe and save motion-detection videos 
+                </p>
+            </div>
+            
+
+            </div>
+          </div>
+
+
 			</div>
 		  </div> 
   </section>
 	 
-		
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <!-- 	<script src="scroll.js"></script> -->
+<script>
+    
+  $(".step").click( function() {
+$(this).addClass("active").prevAll().addClass("active");
+$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+$("#line-progress").css("width", "3%");
+$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+$("#line-progress").css("width", "35%");
+$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+$("#line-progress").css("width", "65%");
+$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+$("#line-progress").css("width", "97%");
+$(".production").addClass("active").siblings().removeClass("active");
+});
+
+  </script>
 
 </body>
 
