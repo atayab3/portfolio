@@ -137,7 +137,7 @@
           </div>
           
           <div id="progress-content-section">
-            <div class="section-content discovery active">
+            <div class="section-content first active">
               <h2>Research Assistant</h2>
               <h6 id="left">UIC Dept of Computer Science</h6>
               <h6 id="right">Summer 2019</h6>
@@ -147,7 +147,7 @@
                 </p>
             </div>
             
-            <div class="section-content strategy">
+            <div class="section-content second">
               <h2>Computer Specialist I</h2>
               <h6 id="left">UIC SCAILAB</h6>
               <h6 id="right">Aug 2019 - May 2020</h6>
@@ -157,7 +157,7 @@
                 </p>
             </div>
             
-            <div class="section-content creative">
+            <div class="section-content third">
               <h2>Undergraduate Teaching Assistant </h2>
               <h6 id="left">UIC Dept of Computer Science</h6>
               <h6 id="right">Aug - Dec 2020 | Jan - May 2022</h6>
@@ -167,7 +167,7 @@
 
             </div>
             
-            <div class="section-content production">
+            <div class="section-content fourth">
               <h2>Front End Engineering Co Op</h2>
               <h6 id="left">Chamberlain Group Inc.</h6>
               <h6 id="right">Jan - Apr 2021</h6>
@@ -178,7 +178,7 @@
                 </p>
             </div>
             
-            <div class="section-content production">
+            <div class="section-content fifth">
               <h2>Software Engineer Intern</h2>
               <h6 id="left">Paylocity</h6>
               <h6 id="right">May - Aug 2021</h6>
@@ -209,23 +209,27 @@ $(this).nextAll().removeClass("active");
 });
 
 $(".step01").click( function() {
-$("#line-progress").css("width", "3%");
-$(".discovery").addClass("active").siblings().removeClass("active");
+$("#line-progress").css("width", "1%");
+$(".first").addClass("active").siblings().removeClass("active");
 });
 
 $(".step02").click( function() {
-$("#line-progress").css("width", "35%");
-$(".strategy").addClass("active").siblings().removeClass("active");
+$("#line-progress").css("width", "28%");
+$(".second").addClass("active").siblings().removeClass("active");
 });
 
 $(".step03").click( function() {
-$("#line-progress").css("width", "65%");
-$(".creative").addClass("active").siblings().removeClass("active");
+$("#line-progress").css("width", "50%");
+$(".third").addClass("active").siblings().removeClass("active");
 });
 
 $(".step04").click( function() {
-$("#line-progress").css("width", "97%");
-$(".production").addClass("active").siblings().removeClass("active");
+$("#line-progress").css("width", "72%");
+$(".fourth").addClass("active").siblings().removeClass("active");
+});
+$(".step05").click( function() {
+$("#line-progress").css("width", "98%");
+$(".fifth").addClass("active").siblings().removeClass("active");
 });
 
   </script>
